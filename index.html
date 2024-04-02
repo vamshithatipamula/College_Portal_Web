@@ -1,0 +1,499 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><link href="index.css" rel="stylesheet" /> 
+        <!-- <script src="CSS/jquery-1.8.0.min.js"></script> -->
+        <!-- <script src="index.js"></script> -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <title>
+	BET e-Portal Login
+</title>      
+    <style>
+           .html, body{
+            padding:0;
+            margin:0;            
+            }
+
+           .body {
+            background:#fff;
+            color: #000;
+            }
+     
+        .TopHeader
+        {
+            height:30px;
+	        width:100%;
+	        background-color:#ebb04c;
+            text-align:center;
+            padding-top: 0px;
+            padding-bottom:0px;
+            font-family :Arial ,Arial ;
+            background-image:url(../Images/MainLoginheader.jpg);
+        }
+        .MessageLabelRed
+            {
+                color:#ff0000;
+                font-family:arial;
+                font-size: 11px;
+                width:150px;
+            }
+        .Footer
+        {
+	        height:30px;
+	        width:100%;	       
+            text-align:center;
+            padding-top: 0px;
+            padding-bottom:0px;
+            font-family :Arial ,Arial ;
+            font-size:13px;
+            font-weight:bold;
+            background-image:url(../Images/MainLoginFooter.jpg);
+        }
+        .SmallFont
+        {
+            font-family:arial,Arial ;
+            font-size:13px;
+            font-weight:bold;
+            color:#C0C0C0;
+        }
+        .fieldset
+         {
+             text-align:center;
+             background-color:none;
+             width: 150px;
+             height:390px;
+             border: 3px solid #000;
+             border-radius: 20px;
+	         padding: 5px 0px 0px 40px;        
+             margin-left:260px;
+             margin-right:10px;
+             margin-bottom:0px;
+             margin-top:190px;
+             font-family :Arial ,Arial ;
+        }
+       .fieldsetclasslogin
+         {
+             width: 300px;
+	         border: 3px solid #000;
+	         border-radius: 5px;
+	 
+             text-align:left;
+             font-family :Arial ,Arial ;       
+         }
+       .FormText
+        {
+            font-size:12px;
+            font-weight:bold;
+            font-family:arial,Arial;
+        }
+        .Image
+        {
+            /*margin-left:60px;*/
+            text-align:center;
+        }
+        /*.ImageHeading
+        {
+            margin-left:-10px;
+            color:white;
+            background-color:black;
+            width:250px;
+            margin-top:-5px;
+        }*/
+        .LabelHeading
+        {
+            text-align:center;
+            width:300px;
+        }
+        .TextBoxes
+        {
+            width:200px;
+
+        }
+        .submit 
+        {
+            color: #000;
+            background-color: #f9c903;
+            border: none;
+            border-radius: 5px;
+            width: 55px;
+            font-family: 'Arial';
+            font-weight:bold;
+        }
+        submit:hover
+            {
+	        background-color:#FC0;  
+            }
+        .CollegeName
+        {
+            font-family:Arial ,arial;
+            font-weight:bold;
+            font-size:25px;
+        }
+
+        
+               nav 
+               {
+                  font-family:arial,Arial;
+                  line-height: 0.5;
+                  margin: 50px 0px 0px 0px; /*for display only*/
+                  width: 170px;
+                  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,1);
+                     -moz-box-shadow: 2px 2px 5px rgba(0,0,0,1);
+                          box-shadow: 2px 2px 5px rgba(0,0,0,1);
+                } 
+              
+    </style>
+
+</head>
+    <body class="Body">
+          
+<!-- 
+          
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTMwMTg5NjI5NA9kFgICAw9kFgYCBQ8PFgIeB1Zpc2libGVoZGQCCw8PFgIeBFRleHRkZGQCDQ8PFgIfAGdkFgQCAQ8PFgofAQUNU3R1ZGVudCBMb2dpbh4JRm9yZUNvbG9yCiMeCUZvbnRfQm9sZGceCUZvbnRfU2l6ZSgqIlN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuRm9udFVuaXQEMThwdB4EXyFTQgKEGGRkAhEPDxYCHwFkZGRkGNxfPUQ/4awYvpMSYEkIKIq4ReE1tk2MvpRoxiYYEwg=" />
+</div> -->
+
+
+<!-- 
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAkLs/+LkJMTfd/QR/vwCXfiELYayygIrYKbL/Dx4x5DdMr/oJFE+eOmI+wQrfEPHbtpOCqQ5ELEfO+O75msrGKkDlm4ViRSj8IOmM+vzfHmfTPSlu16Yx4QbiDU+dddK1OinihG6d/Xh3PZm3b5AoMQ+Ot37oCEEXP3EjBFcbJhKCh34ya5objibTUZ9mTnN+SHux3UAhIbdDF6W45n+rJhxchFn1A7CVu6MJ4SwD/zmw==" />
+</div> -->
+
+                 
+               <div class="mainimage " style="text-align:center;width:100%;height:100%;">
+                   <table class="TopHeader">
+                       <tr>
+                           <td colspan="2">
+
+                           </td>
+                       </tr>
+                   </table>
+                   <table>                       
+                       <tr style="height:120px;">
+                           <td colspan="3">
+                               <table style="margin-left:150px;">
+                                   <tr>
+                                       <td >
+                                           <img id="Image2"  src="Images/header.jpg" style="height:120px;width:1000px;" />
+                                       </td>                                      
+                                   </tr>
+                               </table>
+                               
+                           </td>                                              
+                       </tr>
+                       
+                       <tr class="one"  style="height:462px;">
+                        
+                            <td style="vertical-align:top; width:269px;">
+                                
+                                <table>
+                                        <tr>
+                                            <td>
+                                             <div id='cssmenu'>                                                   
+                                                      <ul>
+                                                            <li class="has-sub"><a id="lnkLogins" href="javascript:__doPostBack(&#39;lnkLogins&#39;,&#39;&#39;)">Logins</a>
+
+                                                            </li>                                                                                                              
+                                                      </ul>                                     
+                                                    </div>     
+                                            </td>
+                                        </tr>               
+                                </table>
+                            </td>
+                            <td style="width:1080px;">
+                                
+                                <table>
+                                    <tr>
+                                       <td style="text-align:center;">
+                                          
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                                <div id="LoginPanels" style="margin-left:240px; margin-top:-60px;">
+	
+                                                    <table class="fieldsetclasslogin">
+                                                         <tr>
+                                                             <td style="text-align:center;">
+                                                                 <table style="width:297px;">
+                                                                     <tr>
+                                                                        <td class="LabelHeading" style="text-align:center;">
+                                                                            <span id="lblDisplay" style="color:Black;font-size:18pt;font-weight:bold;">Student Login</span>                                                           
+                                                                        </td>
+                                                                    </tr>
+                                                                 </table>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td style="margin-left:100px;">
+                                                                <table style="margin-left:45px;">                                                                                                                                                 
+                                                                    <tr>
+                                                                        <td class="FormText">
+                                                                             <span id="lblUserId">UserID</span>
+                                                                        </td>   
+                                                                    </tr>
+                                                                    <tr>
+                                                                         <td>
+                                                                             <input name="txtUserId" type="text" id="txtUserId" class="TextBoxes" />
+                                                                         </td>
+                                                                     </tr>
+                                                                    <tr>
+                                                                         <td class="FormText">
+                                                                             <span id="lblPwd">Password</span>
+                                                                         </td>   
+                                                                    </tr>
+                                                                    <tr>
+                                                                         <td>
+                                                                              <input name="txtPwd" type="password" id="txtPwd" class="TextBoxes" />
+                                                                         </td>
+                                                                     </tr>
+                                                                    <tr>
+                                                                        <td style="text-align:center; width:208px;">
+                                                                            <table style="text-align:center; width:208px;">
+                                                                                <tr>                                                                   
+                                                                                    <td>
+                                                                                        <input type="submit" name="btnLogin" value="Login" id="btnLogin" class="submit" />                                                                   
+                                                                                        <input type="submit" name="btnCancel" value="Cancel" id="btnCancel" class="submit" />
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>  
+                                                                     </tr>
+                                                                    <tr>
+                                                                        <td style="font-size:12px;">
+                                                                           <a id="lnkForgorPwd" href="javascript:__doPostBack(&#39;lnkForgorPwd&#39;,&#39;&#39;)">Forgot Your Password?</a>
+                                                                        </td>
+                                                                     </tr>
+                                                                    
+                                                                    <tr>
+                                                                         <td style="text-align:center;">
+                                                                             <img id="Image1" class="Image" src="Images/bees_logo.jpg" />
+                                                                         </td>
+                                                                     </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>                                  
+                                                    </table>  
+                                                
+</div> 
+                                        </td>
+                                    </tr>
+                                </table>                                                            
+                             </td>
+                        </tr>                  
+                     </table>   
+                   <table class="Footer">
+                        <tr>
+                            <div class="exam  hide">
+                                advjvvklak
+                            </div>
+                            <td style="text-align:right">
+                                <span id="lblfutr" style="color:Black;font-family:Arial;color:Black;font-family:Arial;padding:0px 230px 0px 0px"> Copyrights &copy 2015.   All Rights Reserved BeeS Software Solutions Pvt.Ltd  </span>
+                            </td>
+
+                        </tr>
+                    </table> 
+               </div>                        
+            </form>
+        </div>
+
+        <div class="images hide">
+           
+           
+              <header>
+                <div class="header-content">
+                    <img id="Image2"  src="Images/header.jpg"  />
+
+                </div>
+                <div class="usersection">
+                <span class="" ><img class="studentimg" src="" alt=""></span>
+            </div>
+
+                <div class="user-info">
+                    <!-- <span><img src="images/StudentPhoto.jpeg" alt=""></span> -->
+                    <p id="para " class="d-inline"><b id="blue ">HTNo:</b><p class="htno d-inline"></p>	</p>
+                  <p id="para"  class="d-inline"> <b id="blue">Name:</b> <p class="Name d-inline"></p></p>
+                  <p id="para"  class="d-inline"> <b id="blue">Branch:</b><p class="branch d-inline"></p></p>  <b id="blue" class="d-inline">Sem:</b> 1 YEAR I SEMESTER</p>
+                </div>
+                <a href="" style="position: absolute;right: 10px;top: 20px;">Log Out</a>
+
+              </header>
+              <footer class="foot">
+                <p>TKREC Student Portal</p>
+              </footer>
+              <aside class="notificationsection">
+
+
+              
+              <nav>
+                <ul>
+                  <li class="links"><a href="#">Basic Information</a></li>
+                  <li class="links"><a href="#">Academic Information</a></li>
+                  <li class="links"><a href="#">Notifications</a></li>
+                  <li class="links"><a href="#">Exam Time Tables</a></li>
+                  <li class="links"><a href="#">Online Fee Payments</a></li>
+                  
+                    <li class=" links dropdown">
+                        <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Marks Details
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="https://www.tkrcetautonomous.org/StudentLogin/Student/MidMarksQuestionWise.aspx">Mid Script View</a></li>
+                          <li><a class="dropdown-item" href="https://www.tkrcetautonomous.org/StudentLogin/Student/MidMarks.aspx">Mid Marks</a></li>
+                          <li><a  class="dropdown-item examarks" href="#">Final Internal Marks</a></li>
+                          <li><a class="dropdown-item" href="#">Overall Marks</a></li>
+                          <li><a class="dropdown-item" href="#">Overall Sem-wise</a></li>
+                          <li><a class="dropdown-item" href="#">Credit Register</a></li>
+                        </ul>
+                      </li>
+                </li>
+                  <li class="links"><a href="#">Downloads</a></li>
+                  <li class="links"><a href="#">Suggestions</a></li>
+                  <li class="links"><a href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+              <main>
+                <section class="announcements ">
+                  <div class="text text-center" style="color: red; font-size: 0.8em;"><h2 >Notifications</h2></div>
+                  <div class="notinav">
+                    <div class="date"><b>Date</b></div>
+                    <div class="notify"><b>	NotificationNo</b></div>
+                    <div class="mesg"><b>Messages</b></div>
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  <div class="notifycont">
+                    <div class="datetext"><p>04-12-2023</p><hr></div>
+                    <div class="notnotext"><p> 04122023</p></div>
+                    <div class="mesgtext">
+
+                  <p id="para">Dear students A Tech IV-J Sem Regular & Supply Hall tickets have been released Students are also informed to verify the Narme Father Name and Gender etc for any corrections contact exambranch counters with valid documents Download your Halltickets from https://www.tkrcelautonomous org Any issues encountered during the downloading contact exambranch immediately.</p>
+
+                    </div>
+                    
+                  </div>
+                  
+                </section>
+              </main>
+              <section class="resultbox hide">
+                <div class="resultpara text-center"><h5 style="margin: 0px;padding: 0;">Final Marks</h5><p style="margin-top: 0;display: inline;font-size: 11px;" id="para">Select SEM: &nbsp;&nbsp;</p>
+                    <p style="display: inline; border: 1px solid black;padding: 0 5px 0 5px; font-size: 11px;"> 1 Year 1 SEMESTER</p>
+                <p class="showbtn" style="display: inline; background-color: orange; padding: 1px 5px 1px 5px; border-radius: 3px; font-size: 11px;">Show Marks</p>
+                </div>
+                <div class="result ">
+                    <div class="Exam"><b>Exam Code</b></div>
+                    <div class="Subject"><b>		Subject Name</b></div>
+                    <div class="Total"><b>	Total Marks</b></div>
+                  </div>
+                  <div class="notifycont resultcont">
+                    <div class="Examtext"><p id="para"> </p></div>
+                    <div class="Subjecttext"><p id="para">Max-Marks</p></div>
+                    <div class="Totaltext">
+
+                  <p id="para">60.0</p>
+                    </div>
+                    <div class="allmarks hide">
+                    <div class="Examtext"><p id="para"> 4B1AA</p></div>
+                    <div class="Subjecttext"><p id="para">Linear Algebra & Ordinary Differential Equations</p></div>
+                    <div class="Totaltext m1">
+
+                  <p id="para" style="color: red;"><b>19</b></p>
+                    </div>
+                    <div class="Examtext"><p id="para"> 4B1AA</p></div>
+                    <div class="Subjecttext"><p id="para"> Engineering Physics</p></div>
+                    <div class="Totaltext ">
+
+                  <p id="para" class="phy" >63.0</p>
+                    </div>
+                    <div class="Examtext"><p id="para"> 4B1AA</p></div>
+                    <div class="Subjecttext"><p id="para">Fundamentals of Electrical Engineering</p></div>
+                    <div class="Totaltext ">
+
+                  <p id="para" class="bee" >50.0</p>
+                    </div>
+                    <div class="Examtext"><p id="para"> 4B1AA</p></div>
+                    <div class="Subjecttext"><p id="para">C Programming for Problem Solving</p></div>
+                    <div class="Totaltext ">
+
+                  <p id="para "class="c"></p>
+                    </div>
+                    
+                    <h6 style="display: inline;">Total Marks : <h6 class="tmarks"style="display: inline;"></h6></h6><br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <h6 style="display: inline;">Percentage: <h6 class="pass" style="display: inline;"></h6></h6>
+                  </div>
+                  </div>
+                  
+                  
+              
+
+                    
+              </section>
+              
+            </aside>
+            
+        </div>
+    
+      </aside>
+      
+  </div>
+        <script src="index.js"></script>
+        </body>
+        
+</html>
